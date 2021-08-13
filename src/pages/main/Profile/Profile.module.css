@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.container {
+  background-color: #f2eef1;
+  font-family: "Open Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.container {
+  background-color: #f2eef1;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+
+.left {
+  padding: 5em 5em 2em 5em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxTrash {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.boxDropzone {
+  background-color: #f2eef1;
+  color: #bc1823;
+  font-weight: bold;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buttonCancel {
+  margin-top: 1em;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.buttonSave {
+  margin-top: 1em;
+  background-color: #bc1823;
+  color: #f2eef1;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.right {
+  padding: 5em 5em 5em 5em;
+  background-color: white;
+}
+
+.profile {
+  background-color: #f2eef1;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.imageProfile {
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 100%;
+  padding: 2em;
+}
+
+.right h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.formGroup {
+  margin-top: 2em;
+}
+
+.formLabel {
+  color: #bc1823;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.placeholder {
+  height: 45px;
+  margin-top: 0;
+  background-color: transparent !important;
+  padding-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 3px solid #bc1823 !important;
+}
+
+.placeholderDisable {
+  height: 45px;
+  margin-top: 0;
+  background-color: transparent !important;
+  padding-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #bc1823;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 3px solid #bc1823 !important;
+}
+
+.placeholder::after,
+.placeholder:focus,
+.placeholder:hover,
+.placeholderDisable::after,
+.placeholderDisable:focus,
+.placeholderDisable:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.placeholder::placeholder {
+  color: black;
+}
+
+.boxManageProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxManagePassword {
+  margin-top: 4em;
+  background-color: #f2eef1;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.managePassword {
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 3em;
+  border-radius: 20px;
+  background-color: #bc1823;
+  color: #f2eef1;
+}
+
+.managePassword:hover,
+.managePassword:focus,
+.managePassword:active,
+.buttonSave:hover,
+.buttonSave:focus,
+.buttonSave:active {
+  background-color: #9c0f18 !important;
+  color: #f2eef1;
+}
+
+.boxEye {
+  margin-top: 0;
+  background-color: transparent !important;
+  padding-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 14px;
+  height: 45px;
+  border-bottom: 3px solid #bc1823 !important;
+}
+
+.buttonSignIn {
+  margin-top: 2em;
+  background-color: #bc1823;
+  width: 100%;
+  height: 3em;
+  color: #f2eef1;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.buttonSignIn::after,
+.buttonSignIn:focus,
+.buttonSignIn:hover {
+  background-color: #9c0f18 !important;
+  color: #f2eef1;
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding-top: 4em;
+  }
+}
+
+@media (max-width: 540px) {
+  .left,
+  .right {
+    padding: 3em;
+  }
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  background-color: #bc1823;
+  color: #f2eef1;
+}
+
+.buttonSure {
+  width: 5em;
+  margin-right: 1em;
+  font-weight: 600 !important;
+}
+
+.buttonCancelDelete {
+  width: 5em;
+}
+
+.boxThumbs {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.createDataToast {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  position: fixed;
+  background-color: #f2eef1;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.boxClose {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconClose {
+  cursor: pointer;
+}
+
+.createDataToastError {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  position: fixed;
+  background-color: #f2eef1;
+  color: #bc1823;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.bodyToast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyToast h1 {
+  text-align: center;
+  font-size: 16px;
+}
+.createUpdateToast {
+  width: 100%;
+  margin-right: 17%;
+  position: absolute;
+  background-color: #f2eef1;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #f2eef1;
+}

@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.container {
+  background-color: #f2eef1;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.left {
+  background-color: #f2eef1;
+  padding: 5em;
+}
+
+.right {
+  background-color: #bc1823;
+  padding: 5em;
+}
+
+.imageLogin {
+  object-fit: cover;
+  width: 35em;
+  height: 35em;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 99;
+  top: 20%;
+  right: 40%;
+}
+
+.boxLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc1823;
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+}
+
+.titleSignIn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.titleSignIn h1 {
+  margin-left: 1em;
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.left p {
+  color: black;
+  line-height: 2em;
+  font-weight: 500;
+}
+
+.left b {
+  color: #bc1823;
+}
+
+.formGroup {
+  margin-top: 3em;
+  width: 60%;
+}
+
+.formLabel {
+  color: #bc1823;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.buttonSignIn {
+  margin-top: 4em;
+  background-color: #bc1823;
+  width: 60%;
+  height: 3em;
+  font-size: large !important;
+  color: #f2eef1;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.buttonSignIn::after,
+.buttonSignIn:focus,
+.buttonSignIn:hover {
+  background-color: #9c0f18 !important;
+  color: #f2eef1;
+}
+
+.boxEye {
+  margin-top: 0;
+  background-color: transparent !important;
+  padding-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 14px;
+  height: 45px;
+  border-bottom: 3px solid #bc1823 !important;
+}
+
+.placeholder {
+  height: 45px;
+  margin-top: 0;
+  background-color: transparent !important;
+  padding-left: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 14px;
+  border-bottom: 3px solid #bc1823 !important;
+}
+
+.placeholder::after,
+.placeholder:focus,
+.placeholder:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.boxSignUp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonSignUp {
+  background-color: white;
+  color: #bc1823 !important;
+  font-weight: 700;
+  width: 15em;
+  font-size: large;
+  height: 3em;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.registerNow {
+  display: none;
+}
+
+.link,
+.link:hover,
+.link:focus,
+.link:active {
+  color: #bc1823 !important;
+  margin-left: 10px;
+}
+
+@media (max-width: 1240px) {
+  .right {
+    display: none;
+  }
+
+  .formGroup {
+    width: 100%;
+  }
+
+  .buttonSignIn {
+    width: 100%;
+  }
+
+  .registerNow {
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 3em;
+  }
+
+  .registerNow b {
+    cursor: pointer;
+  }
+
+  .registerNow b :hover {
+    color: #9c0f18;
+  }
+}
+
+@media (max-width: 540px) {
+  .left {
+    padding: 3em;
+  }
+}
+
+.boxAlert {
+  display: flex;
+  align-items: center;
+}
+
+.boxAlert h6 {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #bc1823;
+  margin-top: 10px;
+}
+
+.createDataToast {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  position: fixed;
+  background-color: #f2eef1;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.boxClose {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconClose {
+  cursor: pointer;
+}
+
+.createDataToastError {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  position: fixed;
+  background-color: #f2eef1;
+  color: #bc1823;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.bodyToast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.createUpdateToast {
+  width: 100%;
+  margin-right: 17%;
+  position: absolute;
+  background-color: #f2eef1;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #f2eef1;
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.container {
+  background-color: #f2eef1;
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  z-index: 1000;
+}
+
+.rowContainer {
+  background-color: #bc1823;
+  padding: 1em 5em 1em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxLogo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  margin-right: 2em;
+}
+
+.boxMenu {
+  display: flex;
+  align-items: center;
+}
+
+.nonActive {
+  padding: 0.5em;
+  color: #f2eef1;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nonActive:hover,
+.active,
+.active:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #f2eef1;
+  border-radius: 5px;
+  text-decoration: none !important;
+  padding: 0.5em;
+  color: #f2eef1;
+  font-size: 20px;
+}
+
+.imageProfile {
+  width: 3.5em;
+  height: 3.5em;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.textMenu,
+.textMenuActive {
+  display: none;
+}
+
+.dropdownToggle {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdownToggle::after {
+  display: none;
+}
+
+.dropdownMenu {
+  width: 14em;
+  background-color: #bc1823;
+  border: 2px solid #f2eef1;
+  padding: 1em;
+}
+
+.listDropdown {
+  color: #f2eef1;
+}
+
+.listDropdown:hover {
+  color: #bc1823;
+  background-color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1240px) {
+  .boxMenu {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .boxLogo {
+    display: none;
+  }
+
+  .listDropdown {
+    font-size: 16px;
+  }
+
+  .nonActive {
+    padding: 0.2em;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .dropdownToggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .nonActive:hover,
+  .active,
+  .active:hover {
+    padding: 0.2em;
+    font-size: 16px;
+    border-bottom: 2px solid #f2eef1;
+    border-radius: 4px;
+  }
+
+  .rowContainer {
+    padding-bottom: 0;
+  }
+
+  .textMenu {
+    display: block;
+    border-bottom: 0;
+    padding: 0.5em;
+    color: #f2eef1;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .textMenu:hover,
+  .textMenuActive,
+  .textMenuActive:hover {
+    display: block;
+    cursor: pointer;
+    border-bottom: 2px solid #f2eef1;
+    border-radius: 4px;
+    text-decoration: none !important;
+    padding: 0.2em;
+    color: #f2eef1;
+    font-size: 16px;
+  }
+
+  .imageProfile {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .rowContainer {
+    padding: 1em 3em 0em 3em;
+  }
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.container {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2eef1;
+}
+
+.left {
+  background-color: #bc1823;
+  padding: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 50%;
+}
+
+.right {
+  background-color: #f2eef1;
+  padding: 5em;
+}
+
+.boxLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+}
+
+.right h1 {
+  color: #bc1823;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.infoContact h3 {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.infoContact h6 {
+  font-size: 16px;
+  color: #535353;
+}
+
+.infoContact {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+@media (max-width: 1240px) {
+  .infoContact h3 {
+    margin-top: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .infoContact h6 {
+    font-size: 11px;
+    color: #535353;
+  }
+}
+
+@media (max-width: 540px) {
+  .left,
+  .right {
+    padding: 3em;
+  }
+}
