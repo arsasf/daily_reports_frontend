@@ -18,7 +18,7 @@ Employees Membership Daily Report a website that displays daily reports of emplo
 
 ## Requirements
 
-1. <a href="https://nextjs.org/docs/getting-started">Next Js</a>
+1. <a href="https://reactjs.org/">React Js</a>
 2. Node_modules `npm install` or `yarn install`
 3. Backend RESTFull API [`here`](https://github.com/arsasf/daily_reports_backend.git)
 
