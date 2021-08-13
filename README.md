@@ -49,14 +49,13 @@ Employee
 Manager
 
 1. CRUD Profile
-1. CRUD Profile
-1. Upload Profile Image
-1. Change Password
-1. Register & Login
-1. View Chart
-1. View & Filter Daily Report
-1. Viem other employees
-1. CRUD Membership Daily Report
+2. Upload Profile Image
+3. Change Password
+4. Register & Login
+5. View Chart
+6. View & Filter Daily Report
+7. Viem other employees
+8. CRUD Membership Daily Report
 
 ## Acknowledgements
 

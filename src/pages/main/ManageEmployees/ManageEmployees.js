@@ -477,11 +477,9 @@ function ManageEmployees(props) {
 
   const handleDeleteMembership = (id) => {
     setShowModal(false);
-    console.log("run", id);
     props
       .deleteOfficialdom(id)
       .then((res) => {
-        console.log(res.value.data.data);
         setShow(true);
         setError(false);
         setMsg("Success delete membership!");
@@ -494,12 +492,10 @@ function ManageEmployees(props) {
         setMsg(err.response.data.msg);
         handleReset();
         getData();
-        console.log(err.response.data.msg);
       });
   };
 
   const handleUpdate = (id) => {
-    console.log("run", id, form);
     setUpdate(false);
     props
       .updateOfficialdom(id, form)
@@ -522,7 +518,6 @@ function ManageEmployees(props) {
   };
 
   const handleUpdateMembership = (item) => {
-    console.log(item);
     setShowModal(false);
     setUpdate(true);
     setDivision(item.officialdom_division);

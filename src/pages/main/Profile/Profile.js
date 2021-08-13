@@ -162,9 +162,6 @@ function Profile(props) {
     formData.append("userRole", form.userRole);
     formData.append("userPhoneNumber", form.userPhoneNumber);
     formData.append("image", file);
-    for (var pair of formData.entries()) {
-      console.log(pair[0] + ", " + pair[1]);
-    }
     props
       .updateUser(formData)
       .then((res) => {
