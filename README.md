@@ -34,8 +34,6 @@ API_BASE_URL: http://localhost:3010/api/v1/
 API_IMG_URL: http://localhost:3010/api/
 ```
 
-5. Type `npm run dev`
-
 ## Feature
 
 Employee
